@@ -7,6 +7,12 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
   />
   <link rel="stylesheet" href="style.css">
+    <script>
+        var bleep = new Audio();
+        bleep.src = "sound.mp3";
+        var aud = new Audio();
+        aud.src = "click1.mp3";
+    </script>
 </head>
 
 <body>
@@ -15,8 +21,8 @@
             <h1>TESTING YOUR SPEED </h1>
             <br><br>
             <div class="button1">
-                <a href="main.html" class="btn"> START</a>
-                <a href="" class="btn">PLAY MORE</a>
+                <a href="main.html" class="btn" onmousedown="bleep.play()"> START</a>
+                <a href="" class="btn" onmousedown="bleep.play()">PLAY MORE</a>
 
             </div>
         </div>
