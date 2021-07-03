@@ -8,6 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
     <link rel="stylesheet" href="style.css">
+    <script>
+        var bleep = new Audio();
+        bleep.src = "click1.mp3";
+
+
+        function sound() {
+            bleep.play();
+        }
+    </script>
   </head>
   <body>
     <!-- <button id="setting-btn" class="setting-btn">
@@ -34,7 +43,7 @@
         type="text"
         id="text"
         autocomplete="off"
-        placeholder="please type the word here"/>
+        placeholder="please type the word here" onmousedown="bleep.play()" onkeypress="sound()"/>
       <p class="time-container">⏲️time left : <span id="time">10s</span></p>
       <p id="score-container" class="score-container">
         💥score: <span id="score">0</span>
