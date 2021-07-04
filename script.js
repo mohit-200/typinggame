@@ -53,8 +53,8 @@ function gameOver() {
   endgameEl.innerHTML = `
         <h1>Time ran out</h1>
         <p>Your final score is ${score}</p>
-        <button onclick="location.reload()">Restart</button>
-        <button onclick="location.reload()">PLAY MORE</button>
+        <button onclick="location.reload()" >Restart</button>
+        <button onclick="location.reload()" href="https://englishbolega.com/games/" >PLAY MORE</button>
     `;
   endgameEl.style.display = "flex";
 }
