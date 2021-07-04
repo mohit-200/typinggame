@@ -27,8 +27,10 @@ function getRandomWord() {
 }
 
 function addWordToDOM() {
+  document.getElementById("word").style.display="block";
   randomWord = getRandomWord();
   word.innerHTML = randomWord;
+  setTimeout(function(){ document.getElementById("word").style.display="none"; }, 3000);
 }
 addWordToDOM();
 
